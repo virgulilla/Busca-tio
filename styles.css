@@ -1,0 +1,83 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #0078d7, #00a4e4);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#app {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+}
+
+.screen {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen.visible {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+p {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.input {
+    padding: 10px;
+    font-size: 1em;
+    width: 80%;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn {
+    background: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #45a049;
+}
+
+#feedback, #code-feedback, #second-code-feedback {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#feedback.success, #code-feedback.success, #second-code-feedback.success {
+    color: #4caf50;
+}
+
+#feedback.error, #code-feedback.error, #second-code-feedback.error {
+    color: #f44336;
+}
